@@ -1,0 +1,43 @@
+# Ignore virtual environment
+env/
+
+# Ignore Python compiled files
+*.pyc
+__pycache__/
+
+# SQLite database files
+db.sqlite3
+db.sqlite3-journal
+
+# Django log files
+*.log
+
+# Local development settings
+local_settings.py
+
+# Django static files collected for deployment
+staticfiles/
+
+# Media files uploaded by users (if you need to version user files, you might want to remove this)
+media/
+
+# [
+# OS generated files
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
+# ]
+
+
+# [
+# Ignore editor configurations (optional)
+# Visual Studio Code
+.vscode/
+# PyCharm
+.idea/
+# Sublime Text project file
+*.sublime-project
+# Sublime Text workspace file
+*.sublime-workspace
+# ]
