@@ -3,9 +3,9 @@ Local Library website written in Django
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/<your_github_username>/django_local_library.git
    ```
-2. Install NPM packages
+2. Install Python packages with this line to have the same development configerations
    ```sh
    pip install -r requirements.txt
    ```

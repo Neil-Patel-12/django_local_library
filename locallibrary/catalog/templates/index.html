@@ -1,0 +1,32 @@
+{% extends "base_generic.html" %} {% block title %}
+<title>LIBRARY</title>
+{% endblock %} {% block content %}
+<h1>Local Library Home</h1>
+<p>
+  Welcome to LocalLibrary, a website developed by
+  <em>Mozilla Developer Network</em>!
+</p>
+
+<h2>Dynamic content</h2>
+<p>The library has the following record counts:</p>
+<ul>
+  <li><strong>Books:</strong> {{ num_books }}</li>
+  <li><strong>Copies:</strong> {{ num_instances }}</li>
+  <li><strong>Copies available:</strong> {{ num_instances_available }}</li>
+  <li><strong>Authors:</strong> {{ num_authors }}</li>
+</ul>
+
+{% if search_word %}
+<h2>Search Results</h2>
+<p>Results for <strong>"{{ search_word }}"</strong>:</p>
+<ul>
+  <li>
+    <strong>Books containing the word:</strong> {{num_books_containing_word}}
+  </li>
+  <li>
+    <strong>Genres containing the word:</strong> {{num_genres_containing_word}}
+  </li>
+</ul>
+{% else %}
+<p>Use the search bar to find books or genres containing a specific word.</p>
+{% endif %} {% endblock %}
